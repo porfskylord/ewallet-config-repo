@@ -7,3 +7,15 @@ spring:
       name: user
       password: 12345
       roles: user
+  datasource:
+    url: jdbc:postgresql://localhost:5433/user_db
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
