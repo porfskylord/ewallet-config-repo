@@ -18,7 +18,7 @@ logging:
 spring:
   security:
     user:
-      name: ${APP_SECURITY_USER_NAME:defaultuser}
-      password: ${APP_SECURITY_USER_PASSWORD:defaultpass}
+      name: ${APP_SECURITY_USER_NAME:admin}
+      password: ${APP_SECURITY_USER_PASSWORD:12345}
       roles: user
 
