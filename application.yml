@@ -1,5 +1,4 @@
 # This file applies to ALL services unless they override it
-
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/ewallet
@@ -15,3 +14,11 @@ logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
+
+spring:
+  security:
+    user:
+      name: ${APP_SECURITY_USER_NAME:defaultuser}
+      password: ${APP_SECURITY_USER_PASSWORD:defaultpass}
+      roles: user
+
