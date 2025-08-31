@@ -4,6 +4,6 @@ server:
 spring:
   security:
     user:
-      name: eurekaadmin
-      password: eureka123
-      roles: admin
+      name: user
+      password: 12345
+      roles: user
