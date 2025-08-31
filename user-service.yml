@@ -9,8 +9,8 @@ spring:
       roles: user
   datasource:
     url: jdbc:postgresql://localhost:5433/user_db
-    username: ewallet_admin
-    password: 12345
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
