@@ -9,6 +9,11 @@ spring:
       name: ${APP_SECURITY_USER_NAME:admin}
       password: ${APP_SECURITY_USER_PASSWORD:12345}
       roles: user
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
 
 
 
