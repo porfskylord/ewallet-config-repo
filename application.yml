@@ -4,6 +4,11 @@ spring:
     url: jdbc:postgresql://localhost:5433/ewallet
     username: ewallet_admin
     password: 12345
+  security:
+    user:
+      name: ${APP_SECURITY_USER_NAME:admin}
+      password: ${APP_SECURITY_USER_PASSWORD:12345}
+      roles: user
 
 eureka:
   client:
@@ -15,10 +20,5 @@ logging:
     root: INFO
     org.springframework.web: DEBUG
 
-spring:
-  security:
-    user:
-      name: ${APP_SECURITY_USER_NAME:admin}
-      password: ${APP_SECURITY_USER_PASSWORD:12345}
-      roles: user
+  
 
